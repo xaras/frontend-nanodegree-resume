@@ -1,21 +1,45 @@
-//$("#main").append("Laurynas G.");
-
-var awesomeThoughts = "My name is Laurynas and I am AWESOME!";
-var funThoughts = awesomeThoughts.replace("AWESOME", "FUN")
-//$("#main").append(funThoughts);
-
-
 var email = "laurynas@ginkus.lt";
-var newEmail = "laurynas.ginkus@gmail.com";
-
 var name = "Laurynas";
 var role = "Analyst";
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-var formattedName = HTMLheaderName.replace("%data%", name);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-
 var skills = ["awesones", "coolness", "JS"];
 
-$("#header").append(skills);
+var bio = {
+	"name" : "Laurynas",
+	"role" : role,
+	"contactInfo" : {
+			"mobile" : "862965776",
+			"email" : email,
+			"fb" : "www.fb.com/lauryas.g"
+	},
+	"picture" : "images/fry.jpg",
+	"welcomeMessage" : "Welcome to my bio!",
+	"skills" : skills
+}
+
+var work = {
+	"currentPosition" : "System analyst",
+	"employer" : "Ruptela",
+	"yearsWorked" : 1,
+	"cityOfBisnness" : "Vilnius"
+};
+
+var education = {
+	"schoolName" : "Vilnius University",
+	"yearAttended" : "2011-2015",
+	"city" : "Vilnius"
+};
+
+var projects = {
+	"projects" : [
+		{
+			"title" : "ONGO",
+			"description" : "Super duper startup which was never released",
+			"date" : "2015-2016"
+		},
+		{
+			"title" : "TODO box",
+			"description" : "Lame startup which was released",
+			"date" : "2015-2016"
+		}
+	]
+}
